@@ -14,4 +14,8 @@ services:
         value: https://mpt-backend.onrender.com
       - key: NODE_VERSION
         value: "16"
+    routes:
+      - type: rewrite
+        source: "/*"
+        destination: "/index.html"
     autoDeploy: true
