@@ -14,6 +14,10 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jest-worker": "^29.0.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -35,7 +39,10 @@
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 safari version"
+      "not op_mini all"
     ]
+  },
+  "resolutions": {
+    "jest-worker": "^29.0.0"
   }
 }
