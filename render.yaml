@@ -14,6 +14,8 @@ services:
         value: https://mpt-backend.onrender.com
       - key: NODE_VERSION
         value: "16"
+      - key: SKIP_PREFLIGHT_CHECK
+        value: "true"
     routes:
       - type: rewrite
         source: "/*"
