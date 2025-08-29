@@ -14,4 +14,6 @@ services:
         value: production
       - key: REACT_APP_API_URL
         value: https://mpt-backend.onrender.com
+      - key: NODE_VERSION
+        value: "18"
     autoDeploy: true
