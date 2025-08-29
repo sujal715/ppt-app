@@ -4,9 +4,7 @@ services:
     name: mpt-frontend
     rootDir: frontend
     buildCommand: |
-      npm cache clean --force
-      rm -rf node_modules package-lock.json
-      npm install --legacy-peer-deps
+      npm install
       npm run build
     staticPublishPath: ./build
     envVars:
@@ -15,5 +13,5 @@ services:
       - key: REACT_APP_API_URL
         value: https://mpt-backend.onrender.com
       - key: NODE_VERSION
-        value: "18"
+        value: "16"
     autoDeploy: true
